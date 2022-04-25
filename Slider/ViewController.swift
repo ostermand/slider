@@ -19,12 +19,7 @@ class ViewController: UIViewController {
     var points: Int = 0
     
     @IBAction func setNumber() {
-//       Игра только началась
-        if self.round == 0 {
-            number = Int.random(in: 1...50)
-            label.text = String(number)
-            self.round = 1
-        } else {
+
 //            Если первй раунд, получаем значение со слайдера.
             let sliderNumbar = Int(self.slider.value.rounded())
 //            сравниваем значение с загаданным числом
@@ -52,11 +47,14 @@ class ViewController: UIViewController {
             number = Int.random(in: 1...50)
             label.text = String(number)
         }
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        генерируем случайное значение
+                  number = Int.random(in: 1...50)
+                  label.text = String(number)
+        print("viewDidLoad")
     }
 }
 
