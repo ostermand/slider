@@ -48,17 +48,6 @@ class ViewController: UIViewController {
             label.text = String(number)
         }
 
-    lazy var nextViewController: NextViewController = getNextViewController()
-    
-   private func getNextViewController() -> NextViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "NextViewController")
-    return viewController as! NextViewController
-    }
-    
-    @IBAction func showNextScreen() {
-        self.present(nextViewController, animated: true, completion: nil)
-    }
     
     override func loadView() {
         super .loadView()

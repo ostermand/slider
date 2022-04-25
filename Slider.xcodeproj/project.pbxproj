@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		738570FF28169CA100F5F22E /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738570FE28169CA100F5F22E /* NextViewController.swift */; };
+		738571012816AB7E00F5F22E /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738571002816AB7E00F5F22E /* ThreeViewController.swift */; };
 		73B11A9628158D1900F408E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B11A9528158D1900F408E6 /* AppDelegate.swift */; };
 		73B11A9828158D1900F408E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B11A9728158D1900F408E6 /* SceneDelegate.swift */; };
 		73B11A9A28158D1900F408E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B11A9928158D1900F408E6 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		738570FE28169CA100F5F22E /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		738571002816AB7E00F5F22E /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		73B11A9228158D1900F408E6 /* Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B11A9528158D1900F408E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73B11A9728158D1900F408E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				73B11A9728158D1900F408E6 /* SceneDelegate.swift */,
 				73B11A9928158D1900F408E6 /* ViewController.swift */,
 				738570FE28169CA100F5F22E /* NextViewController.swift */,
+				738571002816AB7E00F5F22E /* ThreeViewController.swift */,
 				73B11A9B28158D1900F408E6 /* Main.storyboard */,
 				73B11A9E28158D1B00F408E6 /* Assets.xcassets */,
 				73B11AA028158D1B00F408E6 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				738570FF28169CA100F5F22E /* NextViewController.swift in Sources */,
 				73B11A9628158D1900F408E6 /* AppDelegate.swift in Sources */,
 				73B11A9828158D1900F408E6 /* SceneDelegate.swift in Sources */,
+				738571012816AB7E00F5F22E /* ThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
