@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 //    загаданное число
     var number: Int = 0
 //    роунд
-    var round: Int = 0
+    var round: Int = 1
 //    сумма очков
     var points: Int = 0
     
@@ -49,6 +49,16 @@ class ViewController: UIViewController {
         }
 
     
+    override func loadView() {
+        super .loadView()
+        let versionLabel = UILabel(frame: CGRect(x: 50, y: 20, width: 85, height: 20))
+        versionLabel.backgroundColor = #colorLiteral(red: 0.3884259462, green: 0.6494452953, blue: 0.6857375503, alpha: 1)
+        versionLabel.text = " version 1.1"
+        versionLabel.textColor = .white
+        self.view.addSubview(versionLabel)
+        print("loadView")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        генерируем случайное значение
@@ -56,5 +66,28 @@ class ViewController: UIViewController {
                   label.text = String(number)
         print("viewDidLoad")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("viewDidDisappear")
+    }
+    
+    
+    
 }
 
