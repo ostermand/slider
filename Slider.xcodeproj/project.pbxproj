@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		738570FF28169CA100F5F22E /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738570FE28169CA100F5F22E /* NextViewController.swift */; };
 		738571012816AB7E00F5F22E /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738571002816AB7E00F5F22E /* ThreeViewController.swift */; };
+		738571042816FB8300F5F22E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738571032816FB8300F5F22E /* Game.swift */; };
 		73B11A9628158D1900F408E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B11A9528158D1900F408E6 /* AppDelegate.swift */; };
 		73B11A9828158D1900F408E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B11A9728158D1900F408E6 /* SceneDelegate.swift */; };
 		73B11A9A28158D1900F408E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B11A9928158D1900F408E6 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		738570FE28169CA100F5F22E /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		738571002816AB7E00F5F22E /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		738571032816FB8300F5F22E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		73B11A9228158D1900F408E6 /* Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B11A9528158D1900F408E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73B11A9728158D1900F408E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		738571022816FB1000F5F22E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				738571032816FB8300F5F22E /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		73B11A8928158D1900F408E6 = {
 			isa = PBXGroup;
 			children = (
+				738571022816FB1000F5F22E /* Model */,
 				73B11A9428158D1900F408E6 /* Slider */,
 				73B11A9328158D1900F408E6 /* Products */,
 			);
@@ -145,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73B11A9A28158D1900F408E6 /* ViewController.swift in Sources */,
+				738571042816FB8300F5F22E /* Game.swift in Sources */,
 				738570FF28169CA100F5F22E /* NextViewController.swift in Sources */,
 				73B11A9628158D1900F408E6 /* AppDelegate.swift in Sources */,
 				73B11A9828158D1900F408E6 /* SceneDelegate.swift in Sources */,
@@ -308,7 +320,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.1osbromorf.Slider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -337,7 +349,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.1osbromorf.Slider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
