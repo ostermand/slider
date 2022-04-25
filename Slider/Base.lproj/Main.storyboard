@@ -41,14 +41,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lR4-GA-2LA">
-                                <rect key="frame" x="739" y="362" width="93" height="31"/>
+                                <rect key="frame" x="743" y="362" width="93" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="new scene">
                                     <color key="baseForegroundColor" white="0.23000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="1A3-TG-y7M" kind="show" id="89G-DR-FHK"/>
+                                    <action selector="showNextScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ag-Lb-ePn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,7 +82,7 @@
         <!--Next View Controller-->
         <scene sceneID="ijk-M3-PWg">
             <objects>
-                <viewController id="1A3-TG-y7M" customClass="NextViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NextViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1A3-TG-y7M" customClass="NextViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AZl-Ub-vYM">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,7 +95,7 @@
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ouU-1x-lxD"/>
+                                    <action selector="hideCurrentScene" destination="1A3-TG-y7M" eventType="touchUpInside" id="Ixp-S6-I2V"/>
                                 </connections>
                             </button>
                         </subviews>
